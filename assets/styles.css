@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    background-color: #30381F;
     padding: 0;
     box-sizing: border-box;
 }
@@ -8,13 +9,13 @@ p {
 }
 
 header {
-    max-width: 88%;
+    max-width: 100%;
     margin: 0 auto;
     height: 100px;
     background-color: #30381F;
     color: #BFAE9D;
     font-size: 25px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-top: 10px;
 }
 
@@ -60,7 +61,7 @@ section>div {
     flex-basis: calc(50% - 1em);
     display: flex;
     align-items: flex-end;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .project:first-child {
@@ -79,10 +80,46 @@ section>div {
     background-image: url(./horiseon3.jpg);
     background-repeat: no-repeat;
     background-position:center;
+    background-size: 100%;
 }
 
 .project-img {
     background-image: url(./chalkboard2.jpg);
     background-repeat: no-repeat;
-    background-attachment:scroll
-    background-size:
+    background-position: center;
+    background-size: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: 30381F;
+  }
+  
+  li {
+    float: right;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: blue;
+  }
+
